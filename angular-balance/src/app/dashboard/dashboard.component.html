@@ -1,0 +1,10 @@
+<div class="container dashboard">
+  <p><b>{{message}}</b></p>
+  <p><b>By</b></p>
+  <p><b>{{username}}</b></p>
+  <div class="container quote-input">
+    <input class="form-control" type="text" value="{{message}}" id="myQuote">
+    <button class="btn btn-primary" (click)="updateQuote($event)" value="update Quote">Update Quote</button>
+  </div>
+  <button routerLink="/logout" class="btn btn-danger logout">Log Out</button>
+</div>
